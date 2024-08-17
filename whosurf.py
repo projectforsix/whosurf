@@ -12,7 +12,15 @@ RETRY_ATTEMPTS = 3
 RETRY_DELAY = 5  # segundos
 
 def print_start():
-    print("""   whosurf: v1.5\n""")
+    print("""\033[0;35m
+               )                      (
+    (  (    ( /(             (   (    )\ )
+    )\))(   )\())  (   (    ))\  )(  (()/(
+   ((_)()\ ((_)\   )\  )\  /((_)(()\  /(_))
+   _(()((_)| |(_) ((_)((_)(_))(  ((_)(_) _|
+   \ V  V /| ' \ / _ \(_-<| || || '_| |  _|
+    \_/\_/ |_||_|\___//__/ \_,_||_|   |_|
+                             \x1b[0mby: wh0is\n""")
 
 def conn_tor(tor_socks_port):
     session = requests.Session()
